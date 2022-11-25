@@ -45,10 +45,36 @@ public class StringClass {
 		System.out.println("using method getBytes : "+arr[15]);//prints ascii value of particular index
 		
 		boolean condition1=	name.isBlank();//Returns:true if the string is empty or contains only white space codepoints,otherwise false
-		System.out.println(condition1);
+		System.out.println("isBlank "+condition1);
 		
 		boolean condition2=name.isEmpty();
-		System.out.println(condition2);
+		System.out.println("isEmpty "+condition2);
+		
+		System.out.println("contentEquals method "+name.contentEquals("sayedmurtuzaHaji"));  // true
+		System.out.println("contentEquals method "+name.contentEquals("Hello"));  // false
+		
+		char[] myStr1 = {'H', 'e', 'l', 'l', 'o'};
+	    String myStr2 = "";
+	    myStr2 = String.copyValueOf(myStr1, 0, 3);
+	    System.out.println("Returned String: " + myStr2);  
+	    
+	    
+	    String myStr3= "Hello";
+	    String myStr4 = "Hello";
+	    String myStr5 = "Another String";
+	    System.out.println(myStr3.equals(myStr4)); // Returns true because they are equal
+	    System.out.println(myStr3.equals(myStr5)); // false
+
+
+
+	    String txt = "ABEFGHjkfsgKLMNOPhsbjbik";
+	    System.out.println("length "+txt.length());
+	    
+	    System.out.println(myStr3.replace('H', 'p'));
+	    
+	    System.out.println("orginal string "+txt);
+	    System.out.println("lowercase "+txt.toLowerCase());
+	    System.out.println("upper case "+txt.toUpperCase());
 
 
 		

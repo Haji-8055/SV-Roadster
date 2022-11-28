@@ -115,7 +115,7 @@ public class StringMethods {
 		}
 
 		/////////////////// 10
-		System.out.println("========checking for palindrome =========");
+		System.out.println("========checking for palindrome by converting word into char array =========");
 
 		for (int i = 0; i < arrayOfWords.length; i++) {
 
@@ -126,7 +126,28 @@ public class StringMethods {
 				reverse = reverse + wordToCharArray[j];
 			}
 
-			if (reverse.equals(arrayOfWords[i]) == true) {
+			if (reverse.equals(arrayOfWords[i])) {
+
+				System.out.println("the word " + arrayOfWords[i] + " is a palindrome ");
+			}
+
+			reverse = "";
+		}
+		System.out.println("there is no other palindrome word expect these");
+
+		
+		
+		System.out.println("========checking for palindrome using charAt method=========");
+
+		for (int i = 0; i < arrayOfWords.length; i++) {
+
+
+			for (int j = arrayOfWords[i].length() - 1; j >= 0; j--) {
+
+				reverse = reverse + arrayOfWords[i].charAt(j);
+			}
+
+			if (reverse.equals(arrayOfWords[i])) {
 
 				System.out.println("the word " + arrayOfWords[i] + " is a palindrome ");
 			}

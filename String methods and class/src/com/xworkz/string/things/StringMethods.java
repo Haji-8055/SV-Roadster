@@ -9,7 +9,6 @@ public class StringMethods {
 		String reverse = "";
 
 		String tripleRide = "Triple pop mom Riding is a moom Kannada movie released on 25 Nov, 2022. The movie is directed by Mahesh Gowda and featured Aditi Prabhudeva, Rachana Inder, Sadhu Kokila and Rangayana Raghu as lead characters";
-
 		/////////////////// 1
 		System.out.println("=========Split all by space =========");
 
@@ -96,22 +95,45 @@ public class StringMethods {
 
 		System.out.println(tripleRide.toLowerCase());
 
-		/////////////////// 9
-		System.out.println("========Printing all duplicate Characters  =========");
+		/////////////////// 9(1)
+		System.out.println("========Printing all duplicate Characters with frequency  =========");
 
-		for (int i = 0; i < arrayOfChar.length; i++) {
+		String lowerTripleRide = tripleRide.toLowerCase();
+		char[] ch = lowerTripleRide.toCharArray();
+		int[] freq = new int[ch.length];
 
-			for (int j = 1; j < arrayOfChar.length; j++) {
+		for (int i = 0; i < ch.length; i++) {
 
-				if (arrayOfChar[i] == arrayOfChar[j]) {
-					if (arrayOfChar[i] == ' ') {
-						break;
-					}
-					System.out.println(arrayOfChar[j]);
+			freq[i] = 1;
+
+			for (int j = i + 1; j < ch.length; j++) {
+				if (ch[i] == ch[j]) {
+					freq[i]++;
+					ch[j] = 0;
 				}
+			}
+		}
 
+		for (int i = 0; i < freq.length; i++) {
+			if (ch[i] != ' ' && ch[i] != 0) {
+				System.out.println(ch[i] + "--" + freq[i] + " times");
+			}
+		}
+		System.out.println("========Printing all duplicate Characters without frequency  =========");
+
+		// String lowerTripleRide = tripleRide.toLowerCase();
+		// char[] ch = lowerTripleRide.toCharArray();
+		for (int i = 0; i < ch.length; i++) {
+
+			for (int j = i + 1; j < ch.length; j++) {
+				if (ch[i] == ch[j]) {
+					ch[j] = 0;
+				}
 			}
 
+			if (ch[i] != ' ' && ch[i] != 0) {
+				System.out.println(ch[i]);
+			}
 		}
 
 		/////////////////// 10
@@ -135,12 +157,9 @@ public class StringMethods {
 		}
 		System.out.println("there is no other palindrome word expect these");
 
-		
-		
 		System.out.println("========checking for palindrome using charAt method=========");
 
 		for (int i = 0; i < arrayOfWords.length; i++) {
-
 
 			for (int j = arrayOfWords[i].length() - 1; j >= 0; j--) {
 

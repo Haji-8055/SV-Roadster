@@ -17,6 +17,7 @@ public class EmailRunner {
 		storingEmail.storeEmail("murtuza.xworkz@gmail.com");
 		storingEmail.storeEmail("murtuza.xworkz@gmail.com");
 		storingEmail.storeEmail("murtuza.xworkz@gmail.com");
+		storingEmail.storeEmail("murtuza.xworkz@gmail.com");
 
 	}
 

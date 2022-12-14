@@ -11,6 +11,7 @@ public class IplRunner {
 
 		IplRepositoryImplementor repo = new IplRepositoryImplementor(); // to get create method
 		IplDTO rcb = new IplDTO();
+		
 
 		rcb.setTeamName("Royal Challengers bangalore");
 		rcb.setCaptainName("Virat");
@@ -128,6 +129,12 @@ public class IplRunner {
 		lsg.setCreatedBy("System");// method from AbstractAuditDTO inherited in IplDTO class
 		lsg.setCreatedDate(LocalDateTime.now());
 		repo.create(lsg);
+		
+		System.out.println(repo.findByCaptainName("Virat"));
+		
+		System.out.println(repo.findByCaptainName("Vat"));
+
+
 
 	}
 

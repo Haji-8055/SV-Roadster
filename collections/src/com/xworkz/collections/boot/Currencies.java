@@ -6,7 +6,7 @@ import java.util.LinkedList;
 public class Currencies {
 
 	public static void main(String[] args) {
-
+		
 		String currency = "Russian ruble";
 		String currency1 = "Afghan afghani";
 		String currency2 = "Euro";
@@ -36,7 +36,7 @@ public class Currencies {
 		String currency26 = "Chilean peso";
 
 		Collection<String> collection = new LinkedList<String>();
-
+		
 		collection.add(currency);
 		collection.add(currency1);
 		collection.add(currency2);

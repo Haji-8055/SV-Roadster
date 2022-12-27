@@ -41,13 +41,14 @@ public class ShoeSize {
 		shoe.add(shoe13);
 		shoe.add(shoe14);
 		shoe.add(shoe15);
+		
 
 		System.out.println("==========for each loop==============");
 
-		for (int ref : shoe) {// int i=0; i<sizes.length; i++
-			int ref1 = ref; // int ref1=sizes[i];
-			// sizes.remove(ref);--->throws Exception in thread "main"
-			// java.util.ConcurrentModificationException
+		for (int ref : shoe) {// int i=0; i<shoe.length; i++
+			int ref1 = ref; // int ref1=shoe[i];
+														// sizes.remove(ref);--->throws Exception in thread "main"
+														// java.util.ConcurrentModificationException
 			System.out.println(ref1);
 		}
 

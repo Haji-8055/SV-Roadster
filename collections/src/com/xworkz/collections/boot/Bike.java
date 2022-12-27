@@ -48,7 +48,11 @@ public class Bike {
 		collection.add(bike16);
 		collection.add(bike17);
 		collection.add(bike18);
+		
+		collection.add("vinayak");
 
+		
+		
 		System.out.println(collection);
 		System.out.println("size before clear method : " + collection.size());
 

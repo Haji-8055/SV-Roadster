@@ -35,7 +35,8 @@ public class Animals {
 
 		for (String ref : animals) {// int i=0; i<animals.length; i++
 			String ref1 = ref; // String ref1=animals[i];
-			// animals.remove(ref);--->throws Exception in thread "main" java.util.ConcurrentModificationException
+			// animals.remove(ref);--->throws Exception in thread "main"
+			// java.util.ConcurrentModificationException
 			System.out.println(ref1);
 		}
 
@@ -63,5 +64,7 @@ public class Animals {
 
 		}
 	}
+	
+	
 
 }

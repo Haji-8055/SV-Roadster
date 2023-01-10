@@ -13,7 +13,7 @@ public class TheatreRunner {
 
 	public static void main(String[] args) {
 
-		TheatreDTO dto = new TheatreDTO("SYSTEM", LocalDateTime.now(), null, null, "#8G", "Navrang", "local", 500);
+		TheatreDTO dto = new TheatreDTO("SYSTEM", LocalDateTime.now(), null, null, "#8Gfbfg", "Navrang", "local", 500);
 
 		TheatreRepository repository = new TheatreRepositoryImpl();
 
@@ -35,11 +35,11 @@ public class TheatreRunner {
 		try {
 			service.validateAndSave(dto);
 			
-//			service.validateAndSave(dto1);
-//			service.validateAndSave(dto2); throws -->StorageFullException
-//			service.validateAndSave(dto3);
-//			service.validateAndSave(dto4);
-//			service.validateAndSave(dto5);
+			service.validateAndSave(dto1);
+			service.validateAndSave(dto2); //throws -->StorageFullException
+			service.validateAndSave(dto3);
+			service.validateAndSave(dto4);
+			service.validateAndSave(dto5);
 
 		} catch (InvalidDataException e) {
 			e.printStackTrace();

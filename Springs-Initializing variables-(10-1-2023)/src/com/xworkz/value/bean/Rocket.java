@@ -6,12 +6,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class Rocket {
 
-//	@Value("india")
-	private String country="ind";
-//	@Value("indian RH-75")
-	private String name="adad";
-//	@Value("500.2")
-	private Double budget;
+	@Value("india")
+	private String country ; 	//="ind";
+	
+	@Value("indian RH-75")
+	private String name;    	  //="adad";
+	
+	@Value("500.2")
+	private Double budget;       //=450.0;
 
 	public Rocket() {
 		System.out.println("default constructor of Rocket class...");

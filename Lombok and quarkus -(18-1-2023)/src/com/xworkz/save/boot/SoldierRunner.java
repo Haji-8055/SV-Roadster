@@ -11,12 +11,14 @@ public class SoldierRunner {
 	public static void main(String[] args) {
 
 		SoldierDTO dto = new SoldierDTO("Murtuza", "india", "soldier", 21);
+		SoldierDTO dto1 = new SoldierDTO("a", "india", "soldier", 21);
 
 		SoldierRepository repo = new SoldierRepositoryImpl();
 
 		SoldierService service = new SoldierServiceImpl(repo);
 
 		service.validateAndSave(dto);
+		service.validateAndSave(dto1);
 		
 	}
 

@@ -35,7 +35,7 @@ public class SoldierServiceImpl implements SoldierService {
 		
 		if (!set.isEmpty()) {
 			
-			System.out.println("data is invalid cannot be saved");
+			System.err.println("data is invalid cannot be saved");
 			set.forEach(e -> System.out.println(e.getMessage()));
 			return false;
 

@@ -23,7 +23,7 @@ public class AirportRunner {
 		collect.add(flight4);
 		collect.add(flight5);
 		
-		System.out.println(collect.contains(flight6));
+		System.out.println(collect.contains(flight5));
 
 	}
 

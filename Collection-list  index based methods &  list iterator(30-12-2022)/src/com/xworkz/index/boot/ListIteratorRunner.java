@@ -20,7 +20,7 @@ public class ListIteratorRunner {
 		System.out.println(colors);
 
 		System.out.println("after adding new element==============");
-		colors.add(2, "black");//adds new element at given index,,index of yellow moves to 3
+		colors.add(2, "black");//adds new element at given index,,index of yellow moves to 3.....
 		System.out.println(colors);
 
 		System.out.println("after updating==============");

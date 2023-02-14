@@ -1550,7 +1550,7 @@ public class Dams {
 			if (ch == 1) {
 
 			} else {
-				System.out.println("the dame name is planidrome : " + dam);
+				System.out.println("the dam name is planidrome : " + dam);
 			}
 
 		}
